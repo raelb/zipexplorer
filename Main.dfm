@@ -36,7 +36,6 @@ object MainForm: TMainForm
     Top = 0
     Width = 675
     Height = 26
-    ExplicitWidth = 621
     object SpTBXToolbar1: TSpTBXToolbar
       Left = 0
       Top = 0
@@ -58,9 +57,6 @@ object MainForm: TMainForm
     Align = alLeft
     BevelOuter = bvNone
     TabOrder = 1
-    ExplicitLeft = 24
-    ExplicitTop = 136
-    ExplicitHeight = 41
     object PageControl1: TRzPageControl
       Left = 0
       Top = 0
@@ -74,10 +70,6 @@ object MainForm: TMainForm
       TabIndex = 1
       TabOrder = 0
       TabOrientation = toBottom
-      ExplicitLeft = 32
-      ExplicitTop = 72
-      ExplicitWidth = 300
-      ExplicitHeight = 150
       FixedDimension = 19
       object tsFolder: TRzTabSheet
         Caption = 'Folder'
@@ -96,8 +88,6 @@ object MainForm: TMainForm
       end
       object tsArchive: TRzTabSheet
         Caption = 'Archive'
-        ExplicitWidth = 0
-        ExplicitHeight = 0
         object ArchivePanel: TPanel
           Left = 0
           Top = 0
@@ -123,7 +113,6 @@ object MainForm: TMainForm
             000000000001015C00}
           Archive = AbUnZipper
           ListView = AbListView
-          ExplicitHeight = 337
         end
       end
     end
@@ -136,10 +125,6 @@ object MainForm: TMainForm
     Align = alClient
     BevelOuter = bvNone
     TabOrder = 2
-    ExplicitLeft = 424
-    ExplicitTop = 168
-    ExplicitWidth = 185
-    ExplicitHeight = 41
     object PageControl2: TRzPageControl
       Left = 0
       Top = 0
@@ -152,69 +137,19 @@ object MainForm: TMainForm
       TabIndex = 0
       TabOrder = 0
       TabOrientation = toBottom
-      ExplicitLeft = 88
-      ExplicitTop = 96
-      ExplicitWidth = 300
-      ExplicitHeight = 150
       FixedDimension = 19
       object tsEditor: TRzTabSheet
         Caption = 'Editor'
-        ExplicitWidth = 0
-        ExplicitHeight = 0
         object Editor: TTextEditor
           Left = 0
           Top = 0
           Width = 212
           Height = 369
-          Cursor = crIBeam
-          ActiveLine.Indicator.Visible = False
           Align = alClient
           BorderStyle = bsNone
-          Caret.Options = []
-          CodeFolding.Hint.Font.Charset = DEFAULT_CHARSET
-          CodeFolding.Hint.Font.Color = clWindowText
-          CodeFolding.Hint.Font.Height = -11
-          CodeFolding.Hint.Font.Name = 'Courier New'
-          CodeFolding.Hint.Font.Style = []
-          CodeFolding.Hint.Indicator.Glyph.Visible = False
-          CompletionProposal.CloseChars = '()[]. '
-          CompletionProposal.Font.Charset = DEFAULT_CHARSET
-          CompletionProposal.Font.Color = clWindowText
-          CompletionProposal.Font.Height = -11
-          CompletionProposal.Font.Name = 'Tahoma'
-          CompletionProposal.Font.Style = []
-          CompletionProposal.MinHeight = 0
-          CompletionProposal.MinWidth = 0
-          CompletionProposal.ShortCut = 16416
-          CompletionProposal.Snippets.Items = <>
-          CompletionProposal.Trigger.Chars = '.'
-          Font.Charset = DEFAULT_CHARSET
-          Font.Color = clWindowText
-          Font.Height = -12
-          Font.Name = 'Courier New'
-          Font.Style = []
-          LeftMargin.Font.Charset = DEFAULT_CHARSET
-          LeftMargin.Font.Color = 13408665
-          LeftMargin.Font.Height = -11
-          LeftMargin.Font.Name = 'Courier New'
-          LeftMargin.Font.Style = []
           LeftMargin.Width = 55
-          LineSpacing = 0
-          Minimap.Font.Charset = DEFAULT_CHARSET
-          Minimap.Font.Color = clWindowText
-          Minimap.Font.Height = -1
-          Minimap.Font.Name = 'Courier New'
-          Minimap.Font.Style = []
-          Ruler.Font.Charset = DEFAULT_CHARSET
-          Ruler.Font.Color = 13408665
-          Ruler.Font.Height = -11
-          Ruler.Font.Name = 'Courier New'
-          Ruler.Font.Style = []
-          SyncEdit.ShortCut = 24650
           TabOrder = 0
           WordWrap.Indicator.MaskColor = clFuchsia
-          ExplicitWidth = 185
-          ExplicitHeight = 381
         end
       end
       object tsImage: TRzTabSheet
@@ -232,7 +167,6 @@ object MainForm: TMainForm
     Align = alLeft
     BevelOuter = bvNone
     TabOrder = 3
-    ExplicitHeight = 382
     object AbListView: TAbListView
       Left = 0
       Top = 0
@@ -246,10 +180,6 @@ object MainForm: TMainForm
       ViewStyle = vsReport
       VisibleColumns = [vcName, vcSize, vcRatio, vcPacked, vcAttributes, vcEncrypted, vcMethod, vcPath]
       OnSelectItem = AbListViewSelectItem
-      ExplicitLeft = 1
-      ExplicitTop = 1
-      ExplicitWidth = 191
-      ExplicitHeight = 380
     end
   end
   object AbUnZipper: TAbUnZipper

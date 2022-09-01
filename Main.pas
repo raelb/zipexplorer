@@ -73,6 +73,9 @@ begin
   FormStorage1.IniFileName := ExtractFilePath(ParamStr(0)) + 'layout.ini';
   Editor.Lines.Text := '';
 
+  Editor.Fonts.Text.Size := 10;
+  Editor.Fonts.LineNumbers.Size := 9;
+
   FSettings := TStringList.Create;
   if FileExists(GetSettingsFileName) then
   begin
